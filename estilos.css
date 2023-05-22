@@ -41,6 +41,37 @@ header {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+#colPortada2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .image-container img {
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
 .col {
     flex: 1;
     margin: 10px;
